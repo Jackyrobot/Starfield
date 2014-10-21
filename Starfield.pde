@@ -8,19 +8,18 @@ void setup()
 	{
 		particles[i] = new NormalParticle();
 	}*/
-	particles = new Particle[1001];
-	for(int i = 0; i < 1000; i++)
+	particles = new Particle[801];
+	for(int i = 0; i < 800; i++)
 	{
 		particles[i] = new NormalParticle();
 	}
-	particles[1000] = new OddballParticle();
+	particles[800] = new OddballParticle();
 	for(int i = 0; i < particles.length; i++)
 	{
 		particles[i].move();
 		particles[i].show();
 	}
 }
-int offScreen = 0;
 void draw()
 {
 	background(22, 23, 36);
