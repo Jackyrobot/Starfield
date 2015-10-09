@@ -2,18 +2,19 @@ NormalParticle [] particles;
 void setup()
 {
   size(600,600);
-  for(int i = 0; i <= particles.length; i++)
+  particles = new NormalParticle[10];
+  for(int i = 0; i < particles.length; i++)
   {  
     particles[i] = new NormalParticle();
   }
-  particles[100] = new NormalParticle();
+  //particles = new NormalParticle();
 }
 void draw()
 {
-  for(int i = 0; i <= particles.length; i++)
+  for(int i = 0; i < particles.length; i++)
   {
-    particles[i].show();
     particles[i].move();
+    particles[i].show();
   }
 }
 class NormalParticle implements Particle
