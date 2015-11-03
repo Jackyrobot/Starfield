@@ -57,7 +57,6 @@ class SpaceShip extends Floater
   public double getDirectionY(){return myDirectionY;}
   public void setPointDirection(double degrees){myPointDirection = degrees;}
   public double getPointDirection(){return myPointDirection;}   
-
 }
 abstract class Floater //Do NOT modify the Floater class! Make changes in the SpaceShip class 
 {   
