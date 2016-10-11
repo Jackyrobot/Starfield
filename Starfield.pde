@@ -29,7 +29,7 @@ void setup() {
 }
 
 void draw() {
-  background(50);
+  background(200,200,200);
   textSize(20);
   fill(255);
   if (comment == 1){
