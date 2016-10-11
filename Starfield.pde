@@ -82,7 +82,9 @@ void draw() {
   textSize(20);
   if (windOn == true){
      xvel += wind;
-     text("WIND: " + wind, 10, height - 90);
+     fill(0);
+     text("WIND: " + wind, width-width*0.8, height-height*0.75);
+     noFill();
   }
   fill(0);
   text("HIGHSCORE: $" + hiscore, 10, height - 70);  
@@ -151,7 +153,10 @@ if (xpos>xbasket+20 && xpos<(xbasket+n) && ypos < (ybasket + give) && ypos > (yb
 //  n -=30;
   backboard = false;
 //  boardHeight-=30;
-  score += 1;
+  if(xbasket > 700)
+    score+=3;
+  else
+    score += 2;
   comment = score + 1;
 }
 if (ballColor == 4){
