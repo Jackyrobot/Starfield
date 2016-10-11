@@ -85,9 +85,9 @@ void draw() {
      text("WIND: " + wind, 10, height - 90);
   }
   fill(0);
-  text("HIGHSCORE: " + hiscore, 10, height - 70);  
+  text("HIGHSCORE: $" + hiscore, 10, height - 70);  
   textSize(100);
-  text(score, width-0.9*width, height - 0.8*height); 
+  text("$" + score, width-0.9*width, height - 0.8*height); 
   level = score/10 + 1;
   noFill();
   //text("LEVEL: " + level, 10, height - 50);
