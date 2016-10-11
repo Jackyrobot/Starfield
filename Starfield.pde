@@ -3,7 +3,8 @@ int value = 0, dir = 1, level, score, hiscore, ballColor, comment;
 boolean falling, Shoot, backboard, windOn, unlock1, unlock2, reset;
 PShader blur;
 void setup() {
-  size (1000, 800);
+  fullScreen();
+  //size (1000, 800);
   xpos = width/5;
   ypos = height-300;
   yvel = .5;
