@@ -4,6 +4,10 @@ body {
     color: rgb(0,0,0);
     font-family: "Open Sans", sans-serif;
     text-align: center;
+	
+   transform: scale(0.5);
+   transform-origin: 10% 10%;
+   // add prefixed versions too.
 }
 
 #content {
@@ -21,8 +25,3 @@ footer {
 	font-size: 90%;
 }
 
-div.zoomed { 
-    zoom: 0.5; 
-    -moz-transform: scale(0.5); 
-    -moz-transform-origin: 0 0;
-}
