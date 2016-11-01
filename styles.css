@@ -21,3 +21,8 @@ footer {
 	font-size: 90%;
 }
 
+div.zoomed { 
+    zoom: 0.5; 
+    -moz-transform: scale(0.5); 
+    -moz-transform-origin: 0 0;
+}
